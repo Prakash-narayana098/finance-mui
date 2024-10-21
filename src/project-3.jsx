@@ -5,99 +5,39 @@ function  App() {
     
   return ( 
             <>
-            <h1 className='font-bold text-black text-left'>Desserts</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 gpa-4'>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
-           
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/1.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/2.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/3.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/4.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/5.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/6.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/7.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/8.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
-              <div className='p-4 flex flex-col place-content-center items-end'>
-                <img src="./images/9.jpg" className='h-[150px] w-[550px] rounded-lg' alt="" />
-                <button className='bg-white  border-red-300 text-black text-sm rounded-3xl absolute mx-9'>Add to Cart</button>
-                <div className='text-black text-left py-8 px-8'>
-                  <p className='text-slate-500 text-xs'>Waffle</p>
-                  <p className='text-sm'>Waffle with berries</p>
-                  <p className='text-red-600'>$6.50</p>
-              </div>
-              </div>
+            <div className='grid gap-4 md: grid-cols-2 sm:grid-cols-1'>
+              <div className='product-list'>
+                <p className='text-black font-semibold'>Desserts</p>
+                <div className='grid gap-4 sm: grid-flow-col-1 md:grid-cols-3'>
+                  <div className=''>
+                    <img src="images/1.jpg" className='rounded-lg h-52 w-52' alt="" />
+                    <div className=''><button className="text-black bg-white rounded-full border-red-500 ">Add to Cart</button></div>
+                
+
+ 
+                    <div className='text-left'>
+                        <p>waffle</p>
+                        <p>waffle with Berries</p>
+                        <p className='text-red-400'>$6.50</p>
+                    </div>
+                    </div>
 
 
+                 
+
+                </div>
+              
+
+              </div>
+              <div className='cart-list'>
+                <div className=''>
+                  
+
+                </div>
+  
+              </div>
             </div>
-            <div className='text-red-800 row-span-2 bg-white m-6 rounded-lg'>
-             <p className='font-bold text-lg'>Your Cart (0)</p>
-              <button className='bg-white border-red-500'>Add to cart</button>
-            </div>
-            </div>
+            
             </>
 
 
